@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Español"
+        android:id="@+id/es"
+        android:icon="@drawable/mexico_icon"
+        app:showAsAction="ifRoom"/>
+    <item android:title="Ingles"
+        android:id="@+id/us"
+        android:icon="@drawable/american_u"
+        app:showAsAction="ifRoom"/>
+</menu>

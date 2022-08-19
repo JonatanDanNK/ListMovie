@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687336658893",
+    "project_id": "factumex-a9944",
+    "storage_bucket": "factumex-a9944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687336658893:android:ee3e6e031cc9d8192f9684",
+        "android_client_info": {
+          "package_name": "com.example.factumexprueba.iu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687336658893-6fd8gs965hjc63a8chbfvai6d01cjna0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnlFGMiAHAM7Wg-DIabFoGIwfvYy3mIZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687336658893-6fd8gs965hjc63a8chbfvai6d01cjna0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

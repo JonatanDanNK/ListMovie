@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+  
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/backgroundColor"
+      tools:context=".presentation.moviedetails.MovieDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/returnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/xsmall"
+        android:layout_marginTop="@dimen/small"
+        android:backgroundTint="#A1FFFFFF"
+        android:contentDescription="@string/floating_btn_description"
+        android:src="@drawable/ic_round_navigate_before"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/posterMovie"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail"
+        app:shapeAppearanceOverlay="@style/shapeableImageStyle"
+        tools:src="@drawable/img_exemplo2" />
+
+
+
+    <TextView
+        android:id="@+id/movieTitle"
+        style="@style/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:maxEms="9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posterMovie"
+        tools:text="@string/movie_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/genreRvMovieInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle"
+        tools:listitem="@layout/item_movie_genres" />
+
+    <TextView
+        android:id="@+id/txtViewSynopsis"
+        style="@style/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium"
+        android:text="@string/synopsis"
+        android:textSize="@dimen/medium_sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/movieTitle"
+        app:layout_constraintTop_toBottomOf="@+id/genreRvMovieInfo" />
+
+    <TextView
+        android:id="@+id/movieSynopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/large"
+        android:layout_marginTop="@dimen/xsmall"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/movie_synopsis"
+        android:textColor="@color/movieInfoTextColor"
+        app:layout_constraintStart_toStartOf="@+id/txtViewSynopsis"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSynopsis"
+        tools:text="@string/synopsis" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

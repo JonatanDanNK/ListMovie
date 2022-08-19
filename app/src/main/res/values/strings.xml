@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DataMovie</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_title">Movie title</string>
+    <string name="movie_img_description">movie banner picture</string>
+    <string name="star_icon_description">star icon</string>
+    <string name="movie_rating">%</string>
+    <string name="synopsis">Sinopse</string>
+    <string name="movie_synopsis">movie synopsis</string>
+    <string name="floating_btn_description">return to previous page button</string>
+</resources>
