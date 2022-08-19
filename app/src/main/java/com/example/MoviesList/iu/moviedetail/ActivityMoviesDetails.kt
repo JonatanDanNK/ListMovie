@@ -67,7 +67,6 @@ class ActivityMoviesDetails : AppCompatActivity() {
                 result.overview?.let {
                     movieSynopsis.text = it
                 }
-
                 genresRvAdapter = MovieDetailsGenresRvAdapter(result.genres)
                 genresRv.adapter = genresRvAdapter
 
